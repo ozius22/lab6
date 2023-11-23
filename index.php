@@ -1,5 +1,4 @@
 <html>
-
     <head>
         <title>Class and Object Demo</title>
         <link rel="stylesheet" href="dist/output.css">
@@ -74,19 +73,15 @@ class FormInfoClass {
     public function setMiddleInitial($middleInitial){
         $this->middleInitial = $middleInitial;
     }
-
     public function setAge($age){
         $this->age = $age;
     }
-
     public function setContactNo($contactNo){
         $this->contactNo = $contactNo;
     }
-
     public function setEmail($email){
         $this->email = $email;
     }
-
     public function setAddress($address){
         $this->address = $address;
     }
@@ -95,27 +90,21 @@ class FormInfoClass {
     public function getLastName(){
         return $this->lastName;
     }
-
     public function getFirstName(){
         return $this->firstName;
     }
-
     public function getMiddleInitial(){
         return $this->middleInitial;
     }
-
     public function getAge(){
         return $this->age;
     }
-
     public function getContactNo(){
         return $this->contactNo;
     }
-
     public function getEmail(){
         return $this->email;
     }
-
     public function getAddress(){
         return $this->address;
     }
