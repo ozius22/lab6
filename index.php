@@ -1,10 +1,13 @@
 <html>
+
     <head>
         <title>Class and Object Demo</title>
         <link rel="stylesheet" href="dist/output.css">
     </head>
+
     <body class="bg-gray-100">
         <div class="container mx-auto p-8">
+
             <form action="" method="post" class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
                 <div class="mb-4">
                     <label for="lastName" class="block text-gray-800 text-sm font-semibold mb-2">Last Name:</label>
@@ -13,17 +16,17 @@
 
                 <div class="mb-4">
                     <label for="firstName" class="block text-gray-800 text-sm font-semibold mb-2">First Name:</label>
-                    <input type="text" name="firstName" id="firstName" class="w-full border rounded-md py-2 px-3">
+                    <input type="text" name="firstName" id="firstName" class="w-full border rounded-md py-2 px-3" placeholder="*" required>
                 </div>
 
                 <div class="mb-4">
                     <label for="middleInitial" class="block text-gray-800 text-sm font-semibold mb-2">Middle Initial:</label>
-                    <input type="text" name="middleInitial" id="middleInitial" class="w-full border rounded-md py-2 px-3" placeholder="*" required>
+                    <input type="text" name="middleInitial" id="middleInitial" class="w-full border rounded-md py-2 px-3">
                 </div>
 
                 <div class="mb-4">
                     <label for="age" class="block text-gray-800 text-sm font-semibold mb-2">Age:</label>
-                    <input type="text" name="age" id="age" class="w-full border rounded-md py-2 px-3" placeholder="*" required>
+                    <input type="number" name="age" id="age" class="w-full border rounded-md py-2 px-3" placeholder="*" required>
                 </div>
 
                 <div class="mb-4">
@@ -45,9 +48,11 @@
                     <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700">Submit</button>
                 </div>
             </form>
+
         </div>
     </body>
 </html>
+
 
 <?php
 class FormInfoClass {
@@ -63,11 +68,9 @@ class FormInfoClass {
     public function setLastName($lastName){
         $this->lastName = $lastName;
     }
-
     public function setFirstName($firstName){
         $this->firstName = $firstName;
     }
-
     public function setMiddleInitial($middleInitial){
         $this->middleInitial = $middleInitial;
     }

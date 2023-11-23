@@ -27,13 +27,17 @@ require 'index.php';
         echo "<p class=''>Contact No: " . $formInfo->getContactNo() . "</p>";
         echo "<p class=''>Email: " . $formInfo->getEmail() . "</p>";
         echo "<p class=''>Address: " . $formInfo->getAddress() . "</p>";
-
         unset($_SESSION['formInfo']);
     } else {
-
         echo "<p class='text-red-500'>Form information not available.</p>";
     }
     ?>
 </div>
+
+<style>
+    form {
+        display: none;
+    }
+</style>
 </body>
 </html>
